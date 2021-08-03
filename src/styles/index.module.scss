@@ -1,0 +1,56 @@
+$breakpoint-tablet: 768px;
+$purpure: #e25590;
+$dark: #191835;
+$green: #57d366;
+$green-light: #627a6595;
+
+.Layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+
+    .whatsapp {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 100;
+        background: $green-light;
+
+        &:hover {
+            background: $green;
+        }
+    }
+    
+    .header {
+        grid-column: 1;
+        grid-row: 1;
+        width: 100%;
+        // background: $purpure;
+        border-bottom: 3px solid $purpure;
+    }
+    
+    .component {
+        grid-column: 1;
+        height: 100%;
+        width: 100%;
+        grid-row: 2;
+        padding-bottom: 20px; 
+        padding-top: 20px;   
+    }
+    
+    .footer {
+        grid-column: 1 / 3;
+        grid-row: 3;
+        background: $dark;
+        border-top: 3px solid $purpure;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    // @media (max-width: $breakpoint-tablet) {
+        
+    //     .component {
+    //         grid-column: 1/3;
+    //     }
+    // }
+}
