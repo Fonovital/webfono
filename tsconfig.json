@@ -27,6 +27,6 @@
       "@/public/*":["public/*"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "styles/jss/profilePage.tsx", "jest.config.js"],
   "exclude": ["node_modules"]
 }

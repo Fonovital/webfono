@@ -24,7 +24,7 @@ const DataInfo = () => {
            >
                  <Typography component="p" align="center" className={styles.mail}>
                     <MailIcon style={{ color: '#FFFFFF', marginRight: 10 }} />
-                    contacto.fonovital@gmail.coms
+                    {InfoPage.mail}
                 </Typography>
                 <IconButton 
                     aria-label="send WhatsApp info"
