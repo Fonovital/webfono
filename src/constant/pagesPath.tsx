@@ -1,4 +1,4 @@
-import { PathModel } from "@/model/pages-path";
+import { PathModel } from "@/model/pages-path.model";
 
 export const pagesPath: PathModel[] = [
     {

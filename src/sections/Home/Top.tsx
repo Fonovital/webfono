@@ -5,10 +5,7 @@ import image from '@/public/placeholder700.png';
 
 const useStyles = makeStyles((theme:Theme) => createStyles({
   container:{
-    display:'flex',
-    justifyContent:'center',
-    alignItems: 'center',
-    height:'100%'
+    marginBottom: 20
   },
   textSecondary:{
       fontWeight: 200
@@ -17,15 +14,14 @@ const useStyles = makeStyles((theme:Theme) => createStyles({
 
 export const Top = () => {
   const styles = useStyles();
-  return (
-          <Container className={styles.container}>
-              <Grid 
+  return (  <Grid 
                 container
                 spacing={2}
+                className={styles.container}
                 direction="row"
                 justifyContent="center"
                 alignItems="center"
-              >
+            >
                 <Grid item xs={10} sm={10} md={6}>
                     <Typography paragraph variant="h5" component="p" color="textSecondary" className={styles.textSecondary}>
                       #FonoaudiologiaParaTodos.
@@ -36,7 +32,7 @@ export const Top = () => {
                       de <Typography variant="h4" color="primary"  component="span"> MANERA AGÍL</Typography> y <Typography  component="span"  variant="h4" color="primary">SEGURA</Typography>.
                     </Typography>
                 </Grid>
-                <Grid item md={6} sm={10} xs={10}>
+                <Grid item md={6} sm={10} xs={10}> 
                     <Image  
                       alt="Picture of the author"
                       layout="responsive"
@@ -45,7 +41,6 @@ export const Top = () => {
                     />
                 </Grid>
               </Grid>
-          </Container>
   )
 };
 

@@ -1,5 +1,6 @@
 
-import { Top } from '@/section/Home/index'
+import { Top, Medium, Areas } from '@/section/Home/index'
+import { Container } from "@material-ui/core";
 
 type Props = {
   className: any
@@ -7,8 +8,10 @@ type Props = {
 
 export default function Home({className}:Props) {
   return (
-    <div className={className}>
-          <Top />          
-    </div> 
+    <Container className={className}  maxWidth="lg">
+          <Top />      
+          <Medium />    
+          <Areas />
+    </Container> 
   )
 }
