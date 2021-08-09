@@ -1,7 +1,6 @@
 import React from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheets } from '@material-ui/core/styles';
-// import { resetServerContext } from "react-beautiful-dnd";
 
 export default class MyDocument extends Document {
     render() {
@@ -10,7 +9,7 @@ export default class MyDocument extends Document {
                 <Head>
                     <meta charSet="utf-8" />
                     <meta name="theme-color" content="#000000" />
-                    <link rel="shortcut icon" href="fonovital.png" />
+                    <link rel="shortcut icon" href="iconofono.ico" />
                     <link
                         rel="apple-touch-icon"
                         sizes="76x76"

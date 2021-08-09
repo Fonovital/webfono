@@ -6,4 +6,5 @@ export interface InfoModel {
     mail: string;
     city?: string;
     country?:string;
+    logoWhite?: StaticImageData;
 }

@@ -8,7 +8,8 @@ module.exports = {
   reactStrictMode: true,
   images: {
     loader: 'imgix',
-    path: 'https://fonovital.github.io/webfono/'
+    path:  isProd ? 'https://fonovital.github.io/webfono/' : '',
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840]
   },
   exportPathMap: async function (
     defaultPathMap,

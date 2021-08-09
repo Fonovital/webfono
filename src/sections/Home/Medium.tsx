@@ -36,14 +36,15 @@ export const Medium = () => {
                     </Typography>  
                 </Grid>
                 <Grid 
+                  item
                   container
                   spacing={4}
                   direction="row"
                   justifyContent="space-around"
                   alignItems="center"
                 >  
-                    {MediumHome.map((item)=>{
-                      return <Grid item md={2} sm={3} xs={4} spacing={3}>
+                    {MediumHome.map((item, index)=>{
+                      return <Grid item md={2} sm={3} xs={4} key={index}>
                                   <Image  
                                     alt="Picture of the author"
                                     layout="responsive"

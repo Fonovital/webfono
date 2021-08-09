@@ -19,15 +19,22 @@ const useStyles = makeStyles((theme:Theme) => createStyles({
 }))
 
 type Props = {
+    type?: 'normal' | 'white', 
     className?: any
 }
 
-const Logo = ({className = {}}:Props) => {
+const Logo = ({type = 'normal',className = {}}:Props) => {
     const styles = useStyles();
     return  <Link key='home' href='/' >
                 <a className={`${className} ${styles.container}`}>
                     <Image 
-                        src={InfoPage.logo} 
+                        src={
+                             (type == 'normal')
+                               ?InfoPage.logo
+                               :(InfoPage.logoWhite)
+                                 ?InfoPage.logoWhite
+                                 :InfoPage.logo
+                            } 
                         width={90} 
                         height={30} 
                         placeholder="blur"

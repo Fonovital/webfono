@@ -20,10 +20,11 @@ export const Areas = () => {
               className={styles.container}
               direction="row"
               wrap="wrap"
+              spacing={0}
               justifyContent="center"
               alignItems="baseline"
             >
-                <Grid item md={12}>
+                <Grid item md={12} sm={12}>
                     <Typography 
                       color="textPrimary" 
                       align="center"
@@ -31,7 +32,7 @@ export const Areas = () => {
                          ¿Cuáles son las áreas de fonoaudiología?
                     </Typography>  
                 </Grid>
-                <Grid item md={2} sm={3} xs={4}>
+                <Grid item md={2} sm={3} xs={4} key={'lenguaje'}>
                     <Image  
                         alt="Picture of the author"
                         layout="responsive"
@@ -46,7 +47,7 @@ export const Areas = () => {
                       Lenguaje
                     </Typography>
                 </Grid>
-                <Grid item md={2} sm={3} xs={4}>
+                <Grid item md={2} sm={3} xs={4} key={'habla'}>
                     <Image  
                         alt="Picture of the author"
                         layout="responsive"
@@ -61,7 +62,7 @@ export const Areas = () => {
                       Habla
                     </Typography>
                 </Grid>
-                <Grid item md={2} sm={3} xs={4}>
+                <Grid item md={2} sm={3} xs={4} key={'audicion'}>
                     <Image  
                         alt="Picture of the author"
                         layout="responsive"
@@ -76,7 +77,7 @@ export const Areas = () => {
                       Audición
                     </Typography>
                 </Grid>
-                <Grid item md={2} sm={3} xs={4}>
+                <Grid item md={2} sm={3} xs={4} key={'voz'}>
                     <Image  
                         alt="Picture of the author"
                         layout="responsive"
@@ -91,7 +92,7 @@ export const Areas = () => {
                       Voz
                     </Typography>
                 </Grid>
-                <Grid item md={2} sm={3}xs={4}>
+                <Grid item md={2} sm={3}xs={4} key={'deglucion'}>
                     <Image  
                         alt="Picture of the author"
                         layout="responsive"

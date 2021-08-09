@@ -1,7 +1,7 @@
-import { Typography, Container, Grid } from "@material-ui/core";
+import { Typography, Grid } from "@material-ui/core";
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import Image from 'next/image';
-import image from '@/public/placeholder700.png';
+import portada from '@/public/portadaHome.png';
 
 const useStyles = makeStyles((theme:Theme) => createStyles({
   container:{
@@ -37,7 +37,7 @@ export const Top = () => {
                       alt="Picture of the author"
                       layout="responsive"
                       placeholder="blur"
-                      src={image} 
+                      src={portada} 
                     />
                 </Grid>
               </Grid>
